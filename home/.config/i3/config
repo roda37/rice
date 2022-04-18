@@ -1,0 +1,123 @@
+# WINDOW RULES
+assign [class="firefox"] 2
+assign [class="Steam"] 3
+assign [class="steam_app_271590"] 3
+assign [class="steam_app_252950"] 3
+assign [class="csgo_linux64"] 3
+assign [class="Minecraft"] 3
+assign [class="TLauncher"] 3
+assign [class="Lutris"] 3
+assign [class="TLauncher 2.841"] 3
+assign [class="Virt-manager"] 4
+assign [class="qBittorrent"] 5
+for_window [class="Steam"] floating enable
+
+# PROGRAM HOTKEYS
+bindsym Mod1+u exec setxkbmap -layout rs
+bindsym Mod1+BackSpace exec setxkbmap -layout us
+bindsym Mod1+m exec python3 ~/.config/i3/mouse_hider
+bindsym Mod1+z exec xmouseless
+bindsym Mod4+Shift+l exec betterlockscreen -l && xset dpms force off
+bindsym Mod4+l exec betterlockscreen -l
+bindsym Mod4+Shift+p exec xfce4-screenshooter
+bindsym Mod4+p exec xfce4-screenshooter -f -c -s ~/
+bindsym Mod4+x exec terminator
+bindsym Mod4+b exec --no-startup-id ~/.config/i3/check
+bindsym Mod1+v exec ~/Downloads/viber.AppImage
+bindsym Mod4+space exec --no-startup-id rofi -show run
+bindsym Mod4+Shift+BackSpace exec shutdown now
+bindsym Mod1+Return exec steam -no-browser
+
+# WINDOW BORDER CUSTOMIZATION
+new_window pixel 0
+client.focused          			 #138808 #138808 #138808 #138808 #138808
+#client.focused_inactive 			 #D8D5D5 #D8D5D5 #D8D5D5 #D8D5D5 #D8D5D5
+#client.unfocused        			 #D8D5D5 #D8D5D5 #D8D5D5 #D8D5D5 #138808
+client.urgent           			 #138808 #138808 #138808 #138808 #138808
+client.placeholder      			 #138808 #138808 #138808 #138808 #138808
+client.background      	 			 #138808
+
+# SYSTEM HOTKEYS
+bindsym Mod4+Shift+r				 restart
+bindsym Mod4+q						 kill
+bindsym Mod4+Shift+w				 move up
+bindsym Mod4+Shift+a				 move left
+bindsym Mod4+Shift+s				 move down
+bindsym Mod4+Shift+d				 move right
+bindsym Mod4+w						 focus up
+bindsym Mod4+a						 focus left
+bindsym Mod4+s						 focus down
+bindsym Mod4+d						 focus right
+bindsym Mod1+e						 layout toggle split
+bindsym Mod1+q						 layout tabbed
+bindsym Mod4+v						 split h
+bindsym Mod4+h						 split v
+bindsym Mod4+f						 fullscreen toggle
+bindsym Mod4+Shift+space			 floating toggle
+bindsym Mod1+a						 resize shrink width 5 px or 5 ppt
+bindsym Mod1+s						 resize grow height 5 px or 5 ppt
+bindsym Mod1+w						 resize shrink height 5 px or 5 ppt
+bindsym Mod1+d						 resize grow width 5 px or 5 ppt
+bindsym Mod1+x						 move workspace to output right
+bindsym --whole-window Mod4+button4  workspace next
+bindsym --whole-window Mod4+button5  workspace prev
+bindsym --whole-window Mod4+Tab      workspace next
+bindsym --whole-window Mod4+Escape   workspace prev
+bindsym Mod4+1						 workspace number $ws1
+bindsym Mod4+2						 workspace number $ws2
+bindsym Mod4+3						 workspace number $ws3
+bindsym Mod4+4						 workspace number $ws4
+bindsym Mod4+5						 workspace number $ws5
+bindsym Mod4+6						 workspace number $ws6
+bindsym Mod4+7						 workspace number $ws7
+bindsym Mod4+8						 workspace number $ws8
+bindsym Mod4+9						 workspace number $ws9
+bindsym Mod4+Shift+1				 move container to workspace number $ws1
+bindsym Mod4+Shift+2				 move container to workspace number $ws2
+bindsym Mod4+Shift+3				 move container to workspace number $ws3
+bindsym Mod4+Shift+4				 move container to workspace number $ws4
+bindsym Mod4+Shift+5				 move container to workspace number $ws5
+bindsym Mod4+Shift+6				 move container to workspace number $ws6
+bindsym Mod4+Shift+7				 move container to workspace number $ws7
+bindsym Mod4+Shift+8				 move container to workspace number $ws8
+bindsym Mod4+Shift+9				 move container to workspace number $ws9
+
+# AUDIO CONFIGURATION
+bindsym Mod1+equal exec --no-startup-id pulsemixer --change-volume +5
+bindsym Mod1+minus exec --no-startup-id pulsemixer --change-volume -5
+bindsym	Mod1+0 exec --no-startup-id pulsemixer --toggle-mute
+
+# GAPS CONFIGURATION
+gaps inner 0
+gaps outer 0
+bindsym Mod4+z						 gaps inner current plus 5
+bindsym Mod4+c						 gaps inner current minus 5
+bindsym Mod4+Shift+z				 gaps outer current plus 5
+bindsym Mod4+Shift+c				 gaps outer current minus 5
+
+# SYSTEM VARIABLES
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
+floating_modifier Mod4
+font pango:Source Code Pro Bold 8
+
+# CONSTANTS
+exec_always xset -dpms
+exec_always xset s noblank
+exec_always xset s noexpose
+exec_always xrandr --dpi 100
+#exec_always feh --bg-fill wp.jpeg
+exec_always feh --bg-fill ~/Downloads/rfl.jpg
+exec_always ~/.config/i3/bar_startup
+#exec_always --no-startup-id unclutter --timeout 3
+exec_always setxkbmap -option caps:escape
+exec_always ~/.config/i3/mouse_checker
+#exec_always picom --config ~/.config/picom/picom.conf --no-fading-openclose --fade-in-step=1 --fade-out-step=1 --fade-delta=0

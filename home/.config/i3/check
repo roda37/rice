@@ -1,0 +1,7 @@
+#! /usr/bin/env python3
+from os import system
+system('ps aux|grep polybar>/tmp/dasoihjda')
+if len(open('/tmp/dasoihjda').readlines())<3:
+	system('~/.config/polybar/launch.sh & rm /tmp/dasoihjda & echo "1">~/.config/i3/info')
+else:
+	system('killall polybar & rm /tmp/dasoihjda & echo "0">~/.config/i3/info')

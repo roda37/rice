@@ -1,0 +1,10 @@
+#! /usr/bin/env python3
+import requests
+import json
+try:
+		request1=requests.get('https://api.weatherapi.com/v1/current.json?key=62832fc1553d488490d133923222303&q=44.7926508,17.1899643')
+		request2=json.loads(str(request1.text))
+		request3=int(request2['current']['temp_c'])
+		print(str(request3)+'C')
+except:
+	exit()

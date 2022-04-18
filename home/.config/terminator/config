@@ -1,0 +1,25 @@
+[global_config]
+  window_state = maximise
+[keybindings]
+  zoom_in = <Primary>equal
+  help = <Primary>a
+[profiles]
+  [[default]]
+    background_darkness = 0.8
+    background_type = transparent
+    cursor_blink = False
+    cursor_color = "#aaaaaa"
+    font = Source Code Variable Bold Italic 18
+    foreground_color = "#317b42"
+    show_titlebar = False
+    scrollbar_position = hidden
+    use_system_font = False
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+[plugins]

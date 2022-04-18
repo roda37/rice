@@ -1,0 +1,11 @@
+#! /usr/bin/env python3
+from os import system
+try:
+	check=open('/tmp/hgiureo','r').readlines()
+except FileNotFoundError():
+	open('/tmp/hgiureo','w').write('0')
+	system('killall unclutter &')
+if check=='1':
+	system('unclutter --timeout 3 &')
+elif check=='0':
+	system('killall unclutter &')
