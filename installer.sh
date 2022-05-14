@@ -34,4 +34,3 @@ sudo shopt -s extglob
 echo "PC WILL REBOOT IN 3 SECONDS"
 sleep 3
 reboot
-
