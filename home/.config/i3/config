@@ -10,6 +10,7 @@ assign [class="Lutris"] 3
 assign [class="TLauncher 2.841"] 3
 assign [class="Virt-manager"] 4
 assign [class="qBittorrent"] 5
+assign [class="Viber"] 6
 for_window [class="Steam"] floating enable
 
 # PROGRAM HOTKEYS
