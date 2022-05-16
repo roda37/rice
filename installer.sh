@@ -4,6 +4,7 @@ sleep 3
 # Making dirs
 mkdir ~/.config
 mkdir /root/.config
+mkdir ~/screenshots
 
 # Copying config files
 cp -r home/. ~/

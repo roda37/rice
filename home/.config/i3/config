@@ -21,7 +21,7 @@ bindsym Mod1+z exec xmouseless
 bindsym Mod4+Shift+l i3lock -c 000000 exec i3lock  && xset dpms force off
 bindsym Mod4+l exec i3lock -c 000000
 bindsym Mod4+Shift+p exec xfce4-screenshooter
-bindsym Mod4+p exec xfce4-screenshooter -f -c -s ~/
+bindsym Mod4+p exec xfce4-screenshooter -f -c -s ~/screenshots
 bindsym Mod4+x exec terminator
 bindsym Mod4+b exec --no-startup-id ~/.config/i3/check
 bindsym Mod1+v exec ~/Downloads/viber.AppImage
@@ -120,7 +120,7 @@ exec_always xrandr --dpi 100
 exec_always feh --bg-fill ~/wp.jpg
 exec_always ~/.config/i3/bar_startup
 #exec_always --no-startup-id unclutter --timeout 3
-exec_always setxkbmap -option caps:escape
+#exec_always setxkbmap -option caps:escape
 exec_always ~/.config/i3/mouse_checker
 exec_always picom -f 
 #exec_always picom --config ~/.config/picom/picom.conf --no-fading-openclose --fade-in-step=1 --fade-out-step=1 --fade-delta=0
