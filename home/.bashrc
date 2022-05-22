@@ -1,6 +1,6 @@
 alias ls='ls --color=auto'
-#alias l='ls -lahF'
-alias l='exa -lag'
+alias l='ls -lahF'
+#alias l='exa -lag'
 alias gr='sudo pacman -Rsdd'
 alias gs='sudo pacman -Ssq'
 alias g='sudo pacman -S'

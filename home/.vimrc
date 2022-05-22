@@ -6,3 +6,4 @@ set shm+=I
 inoremap jk <Esc>
 set relativenumber
 set background=dark
+set ignorecase
