@@ -32,13 +32,13 @@ bindsym Mod1+Shift+Return exec steam -no-browser
 bindsym Mod1+Return exec steam 
 
 # WINDOW BORDER CUSTOMIZATION
-new_window pixel 0
-client.focused          			 #5b5b5b #ffffff #000000 #000000 #000000
+new_window pixel 1
+client.focused          			 #5b5b5b #ffffff #ffffff #ffffff #ffffff
 #client.focused_inactive 			 #D8D5D5 #D8D5D5 #D8D5D5 #D8D5D5 #D8D5D5
 #client.unfocused        			 #D8D5D5 #D8D5D5 #D8D5D5 #D8D5D5 #5b5b5b
-client.urgent           			 #000000 #000000 #000000 #000000 #000000
-client.placeholder      			 #000000 #000000 #000000 #000000 #000000
-client.background      	 			 #000000
+#client.urgent           			 #000000 #000000 #000000 #000000 #000000
+#client.placeholder      			 #000000 #000000 #000000 #000000 #000000
+#client.background      	 			 #000000
 
 # SYSTEM HOTKEYS
 bindsym Mod4+Shift+r				 restart

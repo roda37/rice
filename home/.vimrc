@@ -7,3 +7,5 @@ inoremap jk <Esc>
 set relativenumber
 set background=dark
 set ignorecase
+set autoindent
+set shiftwidth=4
