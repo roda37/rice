@@ -33,7 +33,7 @@ bindsym Mod1+Return exec steam
 
 # WINDOW BORDER CUSTOMIZATION
 new_window pixel 1
-client.focused          			 #5b5b5b #ffffff #ffffff #ffffff #ffffff
+client.focused          			 #5b5b5b #808080 #000000 #ffffff #ffffff
 #client.focused_inactive 			 #D8D5D5 #D8D5D5 #D8D5D5 #D8D5D5 #D8D5D5
 #client.unfocused        			 #D8D5D5 #D8D5D5 #D8D5D5 #D8D5D5 #5b5b5b
 #client.urgent           			 #000000 #000000 #000000 #000000 #000000
