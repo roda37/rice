@@ -9,3 +9,4 @@ set background=dark
 set ignorecase
 set autoindent
 set shiftwidth=4
+set hlsearch
