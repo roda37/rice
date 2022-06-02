@@ -11,6 +11,8 @@ assign [class="TLauncher 2.841"] 3
 assign [class="Virt-manager"] 4
 assign [class="qBittorrent"] 5
 assign [class="Viber"] 6
+assign [class="plasmashell"] 9
+assign [class="kdeconnect-app"] 9
 #for_window [class="Steam"] floating enable
 
 # PROGRAM HOTKEYS
