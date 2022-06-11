@@ -17,9 +17,10 @@ height = 25
 ;offset-y = 10%
 radius = 2.0
 fixed-center = true
+bottom = true
 
 # background of the bar itself
-background = #292828
+background = #000000
 #${colors.background}
 foreground = ${colors.foreground}
 line-size = 3
@@ -256,7 +257,7 @@ interval = 1
 date =
 date-alt =
 
-time = %H:%M:%S
+time = %d-%m-%Y %H:%M:%S
 time-alt = %d-%m-%Y %H:%M:%S
 
 

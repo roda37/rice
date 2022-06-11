@@ -64,10 +64,10 @@ bindsym Mod1+s						 resize grow height 5 px or 5 ppt
 bindsym Mod1+w						 resize shrink height 5 px or 5 ppt
 bindsym Mod1+d						 resize grow width 5 px or 5 ppt
 bindsym Mod1+x						 move workspace to output right
-bindsym --whole-window Mod4+button5  workspace next
-bindsym --whole-window Mod4+button4  workspace prev
+bindsym --whole-window Mod4+button4  workspace next
+bindsym --whole-window Mod4+button5  workspace prev
 bindsym --whole-window Mod4+Tab      workspace next
-bindsym --whole-window Mod1+Tab workspace prev
+bindsym --whole-window Mod1+Tab 	 workspace prev
 bindsym Mod4+1						 workspace number $ws1
 bindsym Mod4+2						 workspace number $ws2
 bindsym Mod4+3						 workspace number $ws3
@@ -120,10 +120,10 @@ exec_always xset s noblank
 exec_always xset s noexpose
 exec_always xrandr --dpi 100
 #exec_always feh --bg-fill wp.jpeg
-exec_always feh --bg-fill ~/wp.jpg
+exec_always feh --bg-fill ~/wp.png
 exec_always ~/.config/i3/bar_startup
 #exec_always --no-startup-id unclutter --timeout 3
 #exec_always setxkbmap -option caps:escape
 exec_always ~/.config/i3/mouse_checker
-exec_always picom -f 
+#exec_always picom -f 
 #exec_always picom --config ~/.config/picom/picom.conf --no-fading-openclose --fade-in-step=1 --fade-out-step=1 --fade-delta=0
