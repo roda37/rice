@@ -29,7 +29,7 @@ start () {
 		useradd -mG wheel $name
 		echo Enter a password for the user
 		passwd $name
-		cp -r home/ /home/"$name"
+		cp -r home/. /home/"$name"
 	fi
 	cp -r etc/ /etc
 	cp -r usr/ /usr
