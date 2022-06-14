@@ -47,6 +47,7 @@ start () {
 		grub-mkconfig -o /boot/grub/grub.cfg
 	fi
 	mkinitcpio -P
+	echo devidence > /etc/hostname
 }
 
 if [[ "$choice" == "y" ]]; then
