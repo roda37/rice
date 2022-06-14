@@ -37,11 +37,14 @@ start () {
 	cp -r home/. /root/
 	if [[ -d "/sys/firmware/efi" ]]; then
 		grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=ARCHLINUX
+		grub-mkconfig -o /boot/grub/grub.cfg
 	else
 		lsblk
 		echo On what disk will you install the bootloader? [sdX]
 		read sdx
 		grub-install /dev/$sdx
+		mkdir -p /boot/grub
+		grub-mkconfig -o /boot/grub/grub.cfg
 	fi
 	mkinitcpio -P
 }
