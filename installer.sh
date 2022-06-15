@@ -33,14 +33,16 @@ start () {
 		2048
 		+1G
 		t
-		ef
+		1
+		1
 		n
 		p
 		2
 
 		+8G
 		t
-		82
+		2
+		19
 		n
 		p
 		3
@@ -50,6 +52,24 @@ start () {
 		FDISK_CMDS
 	else
 		#fdisk /dev/"$whatdrive" << FDISK_CMDS
+		d
+		d
+		d
+		d
+		n
+		p
+		1
+
+		+8G
+		t
+		1
+		82
+		n
+		p
+		2
+
+
+		w
 		FDISK_CMDS
 	echo $banner
 
