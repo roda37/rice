@@ -23,7 +23,7 @@ start () {
 	echo What drive do you want to install your system on?
 	read whatdrive
 	if [[ -d "/sys/firmware/efi" ]]; then
-		$"fdisk /dev/"$whatdrive" << FDISK_CMDS"
+		fdisk /dev/"$whatdrive" << FDISK_CMDS
 		d
 		d
 		d
@@ -56,7 +56,7 @@ start () {
 		w
 		FDISK_CMDS
 	else
-		$"fdisk /dev/"$whatdrive" << FDISK_CMDS"
+		fdisk /dev/"$whatdrive" << FDISK_CMDS
 		d
 		d
 		d
