@@ -25,6 +25,7 @@ start () {
 	echo Do you want to create a new user? [y/n]
 	read doeshe
 	if [[ "$doeshe" == "y" ]]; then
+		sed 's/^# %wheel ALL=(ALL:ALL) ALL/ %wheel ALL=(ALL:ALL) ALL/' -i /etc/sudoers
 		echo Enter a new user name
 		read name
 		useradd -mG wheel $name
