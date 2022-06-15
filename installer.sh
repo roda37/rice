@@ -33,8 +33,8 @@ start () {
 		passwd $name
 		cp -r home/. /home/"$name"
 	fi
-	cp -r etc/ /etc
-	cp -r usr/ /usr
+	cp -r etc/. /etc/
+	cp -r usr/. /usr/
 	cp -r home/. /root/
 	if [[ -d "/sys/firmware/efi" ]]; then
 		grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=ARCHLINUX
