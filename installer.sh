@@ -1,81 +1,78 @@
 #!/usr/bin/bash
-
-banner="  _,     ,_
-    .'/  ,_   \'.
-   |  \__( >__/  |
-   \             /
-    '-..__ __..-'
-         /_\
-"
-
+banner="HELLO"
 if [ "$EUID" -ne 0 ]
 then echo "Please run as root"
 exit
 fi
-
 start () {
 	echo $banner
-
 	echo This will install a custom Arch Linux environment, do you want to proceed? [y/n]
-
 	read choice
 	lsblk
 	echo What drive do you want to install your system on?
 	read whatdrive
+	HEREDOC_VAR_1='d'
+	HEREDOC_VAR_2='g'
+	HEREDOC_VAR_3='n'
+	HEREDOC_VAR_4='p'
+	HEREDOC_VAR_5='1'
+	HEREDOC_VAR_6='2048'
+	HEREDOC_VAR_7='+1G'
+	HEREDOC_VAR_8='t'
+	HEREDOC_VAR_9='2'
+	HEREDOC_VAR_10='+8G'
+	HEREDOC_VAR_11='19'
+	HEREDOC_VAR_12='3'
+	HEREDOC_VAR_13='w'
+	HEREDOC_VAR_14='82'
 	if [[ -d "/sys/firmware/efi" ]]; then
-		fdisk /dev/"$whatdrive" << FDISK_CMDS
-		d
-		d
-		d
-		d
-		d
-		d
-		d
-		g
-		n
-		p
-		1
-		2048
-		+1G
-		t
-		1
-		1
-		n
-		p
-		2
-
-		+8G
-		t
-		2
-		19
-		n
-		p
-		3
-
-		
-		w
-		FDISK_CMDS
+ 		echo "$HEREDOC_VAR_1" | fdisk /dev/"$whatdrive"
+ 		echo "$HEREDOC_VAR_1" | fdisk /dev/"$whatdrive"
+ 		echo "$HEREDOC_VAR_1" | fdisk /dev/"$whatdrive"
+ 		echo "$HEREDOC_VAR_1" | fdisk /dev/"$whatdrive"
+ 		echo "$HEREDOC_VAR_2" | fdisk /dev/"$whatdrive"
+ 		echo "$HEREDOC_VAR_3" | fdisk /dev/"$whatdrive"
+ 		echo "$HEREDOC_VAR_4" | fdisk /dev/"$whatdrive"
+ 		echo "$HEREDOC_VAR_5" | fdisk /dev/"$whatdrive"
+ 		echo "$HEREDOC_VAR_6" | fdisk /dev/"$whatdrive"
+ 		echo "$HEREDOC_VAR_7" | fdisk /dev/"$whatdrive"
+ 		echo "$HEREDOC_VAR_8" | fdisk /dev/"$whatdrive"
+ 		echo "$HEREDOC_VAR_2" | fdisk /dev/"$whatdrive"
+ 		echo "$HEREDOC_VAR_3" | fdisk /dev/"$whatdrive"
+ 		echo "$HEREDOC_VAR_4" | fdisk /dev/"$whatdrive"
+ 		echo "$HEREDOC_VAR_5" | fdisk /dev/"$whatdrive"
+ 		echo "$HEREDOC_VAR_6" | fdisk /dev/"$whatdrive"
+ 		echo "$HEREDOC_VAR_7" | fdisk /dev/"$whatdrive"
+ 		echo "$HEREDOC_VAR_8" | fdisk /dev/"$whatdrive"
+ 		echo "$HEREDOC_VAR_5" | fdisk /dev/"$whatdrive"
+ 		echo "$HEREDOC_VAR_5" | fdisk /dev/"$whatdrive"
+ 		echo "$HEREDOC_VAR_3" | fdisk /dev/"$whatdrive"
+ 		echo "$HEREDOC_VAR_4" | fdisk /dev/"$whatdrive"
+ 		echo "$HEREDOC_VAR_9" | fdisk /dev/"$whatdrive"
+ 		echo "$HEREDOC_VAR_10" | fdisk /dev/"$whatdrive"
+ 		echo "$HEREDOC_VAR_8" | fdisk /dev/"$whatdrive"
+ 		echo "$HEREDOC_VAR_9" | fdisk /dev/"$whatdrive"
+ 		echo "$HEREDOC_VAR_11" | fdisk /dev/"$whatdrive"
+ 		echo "$HEREDOC_VAR_3" | fdisk /dev/"$whatdrive"
+ 		echo "$HEREDOC_VAR_4" | fdisk /dev/"$whatdrive"
+ 		echo "$HEREDOC_VAR_12" | fdisk /dev/"$whatdrive"
+ 		echo "$HEREDOC_VAR_13" | fdisk /dev/"$whatdrive"
 	else
-		fdisk /dev/"$whatdrive" << FDISK_CMDS
-		d
-		d
-		d
-		d
-		n
-		p
-		1
-
-		+8G
-		t
-		1
-		82
-		n
-		p
-		2
-
-
-		w
-		FDISK_CMDS
+ 		echo "$HEREDOC_VAR_1" | fdisk /dev/"$whatdrive"
+ 		echo "$HEREDOC_VAR_1" | fdisk /dev/"$whatdrive"
+ 		echo "$HEREDOC_VAR_1" | fdisk /dev/"$whatdrive"
+ 		echo "$HEREDOC_VAR_1" | fdisk /dev/"$whatdrive"
+ 		echo "$HEREDOC_VAR_3" | fdisk /dev/"$whatdrive"
+ 		echo "$HEREDOC_VAR_4" | fdisk /dev/"$whatdrive"
+ 		echo "$HEREDOC_VAR_5" | fdisk /dev/"$whatdrive"
+ 		echo "$HEREDOC_VAR_10" | fdisk /dev/"$whatdrive"
+ 		echo "$HEREDOC_VAR_8" | fdisk /dev/"$whatdrive"
+ 		echo "$HEREDOC_VAR_5" | fdisk /dev/"$whatdrive"
+ 		echo "$HEREDOC_VAR_14" | fdisk /dev/"$whatdrive"
+ 		echo "$HEREDOC_VAR_3" | fdisk /dev/"$whatdrive"
+ 		echo "$HEREDOC_VAR_4" | fdisk /dev/"$whatdrive"
+ 		echo "$HEREDOC_VAR_9" | fdisk /dev/"$whatdrive"
+ 		echo "$HEREDOC_VAR_13" | fdisk /dev/"$whatdrive"
 	fi
 	echo ARCH
 	pacman -Sy vlc wget curl bpytop qemu virt-manager dnsmasq libvirt qbittorrent iwd bluez bluez-utils blueman ranger mpv git picom rofi feh xorg-xinit xorg-server xorg-xrandr xorg-xev xorg-xprop pulsemixer dosfstools terminator i3-gaps base-devel unclutter ttf-liberation ttf-dejavu bash-completion p7zip tmux awesome-terminal-fonts w3m elinks ffmpegthumbnailer highlight libcaca mediainfo odt2txt poppler ueberzug polybar i3lock firefox font-manager duf tldr exa dust ristretto yt-dlp dhcpcd btrfs-progs pipewire pipewire-pulse wireplumber vim grub efibootmgr linux linux-firmware base
