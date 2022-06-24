@@ -20,7 +20,6 @@ bindsym Mod1+u exec setxkbmap -layout rs
 bindsym Mod1+BackSpace exec setxkbmap -layout us
 bindsym Mod1+m exec python3 ~/.config/i3/mouse_hider
 bindsym Mod1+z exec xmouseless
-bindsym Mod4+Shift+l betterlockscreen -l  && xset dpms force off
 bindsym Mod4+l exec i3lock -c 000000
 bindsym Mod4+Shift+p exec xfce4-screenshooter
 bindsym Mod4+p exec xfce4-screenshooter -f -c -s ~/screenshots
