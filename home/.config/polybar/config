@@ -42,7 +42,7 @@ font-3 = FontAwesome:style=Regular
 
 modules-left = i3
 modules-center = xwindow
-modules-right = weather pulseaudio date 
+modules-right = gpu_check_nvidia_smi cpu_temp ram_check weather pulseaudio date 
 
 tray-position = right
 tray-padding = 2
@@ -421,3 +421,18 @@ margin-bottom = 5
 type = custom/script
 exec = python3 ~/.config/polybar/weather
 interval=60
+
+[module/ram_check]
+type = custom/script
+exec = bash ~/.config/polybar/ram_check
+interval=1
+
+[module/cpu_temp]
+type = custom/script
+exec = bash ~/.config/polybar/cpu_temp
+interval=1
+
+[module/gpu_check_nvidia_smi]
+type = custom/script
+exec = bash ~/.config/polybar/gpu_check_nvidia_smi
+interval=1

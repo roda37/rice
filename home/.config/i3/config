@@ -24,6 +24,8 @@ bindsym Mod4+l exec i3lock -c 000000
 bindsym Mod4+Shift+p exec xfce4-screenshooter
 bindsym Mod4+p exec xfce4-screenshooter -f -c -s ~/screenshots
 bindsym Mod4+x exec terminator
+bindsym Mod1+h exec sudo arduino
+bindsym Mod1+g exec sudo virt-manager
 bindsym Mod4+g exec firefox
 bindsym Mod4+b exec --no-startup-id ~/.config/i3/check
 bindsym Mod1+v exec ~/Downloads/viber.AppImage
