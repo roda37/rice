@@ -1,3 +1,5 @@
+set clipboard=unnamedplus
+set backspace=indent,eol,start
 colorscheme PaperColor
 set mouse=r
 set tabstop=4
