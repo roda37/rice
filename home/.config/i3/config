@@ -39,7 +39,7 @@ new_window pixel 1
 client.focused          			 #5b5b5b #808080 #000000 #ffffff #ffffff
 #client.focused_inactive 			 #D8D5D5 #D8D5D5 #D8D5D5 #D8D5D5 #D8D5D5
 #client.unfocused        			 #D8D5D5 #D8D5D5 #D8D5D5 #D8D5D5 #5b5b5b
-#client.urgent           			 #000000 #000000 #000000 #000000 #000000
+#client.urgent           			 #820000 #820000 #820000 #820000 #820000
 #client.placeholder      			 #000000 #000000 #000000 #000000 #000000
 #client.background      	 			 #000000
 

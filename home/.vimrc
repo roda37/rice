@@ -1,9 +1,12 @@
+set clipboard=unnamedplus
+set backspace=indent,eol,start
 colorscheme PaperColor
 set mouse=r
 set tabstop=4
 syntax on
 set shm+=I
 inoremap jk <Esc>
+vnoremap cp "+y
 set relativenumber
 set background=dark
 set ignorecase

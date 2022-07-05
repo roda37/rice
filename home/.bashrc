@@ -22,3 +22,5 @@ alias o='bpytop'
 alias df='duf'
 alias find='fd -H'
 alias tree='dust -b'
+alias w='curl wttr.in'
+setxkbmap -option "caps:swapescape"
