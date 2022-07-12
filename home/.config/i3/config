@@ -9,6 +9,9 @@ assign [class="TLauncher"] 3
 assign [class="Lutris"] 3
 assign [class="TLauncher 2.841"] 3
 assign [class="Virt-manager"] 4
+for_window [class="Virt-manager"] floating enable
+for_window [class="win10 on QEMU/KVM"] floating enable
+assign [class="win10 on QEMU/KVM"] 4
 assign [class="qBittorrent"] 5
 assign [class="Viber"] 6
 assign [class="plasmashell"] 9
@@ -16,6 +19,7 @@ assign [class="kdeconnect-app"] 9
 #for_window [class="Steam"] floating enable
 
 # PROGRAM HOTKEYS
+bindsym Mod1+i exec setxkbmap -layout hr
 bindsym Mod1+u exec setxkbmap -layout rs
 bindsym Mod1+BackSpace exec setxkbmap -layout us
 bindsym Mod1+m exec python3 ~/.config/i3/mouse_hider
