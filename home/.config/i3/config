@@ -126,5 +126,6 @@ exec_always ~/.config/i3/bar_startup
 #exec_always --no-startup-id unclutter --timeout 3
 #exec_always setxkbmap -option caps:escape
 exec_always ~/.config/i3/mouse_checker
+exec_always xfce4-clipman
 #exec_always picom -f 
 #exec_always picom --config ~/.config/picom/picom.conf --no-fading-openclose --fade-in-step=1 --fade-out-step=1 --fade-delta=0
