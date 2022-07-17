@@ -23,4 +23,7 @@ alias df='duf'
 alias find='fd -H'
 alias tree='dust -b'
 alias w='curl wttr.in'
-setxkbmap -option "caps:swapescape"
+alias start='sudo systemctl start'
+alias stop='sudo systemctl stop'
+alias restart='sudo systemctl restart'
+alias stat='sudo systemctl status'
