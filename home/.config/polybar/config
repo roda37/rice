@@ -17,10 +17,10 @@ height = 25
 ;offset-y = 10%
 radius = 2.0
 fixed-center = true
-bottom = true
+bottom = false
 
 # background of the bar itself
-background = #000000
+background = #263561
 #${colors.background}
 foreground = ${colors.foreground}
 line-size = 3
