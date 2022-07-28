@@ -1,3 +1,5 @@
+export EDITOR='vim'
+set -o vi
 alias ls='ls --color=auto'
 alias l='ls -lahF'
 #alias l='exa -lag'
@@ -30,3 +32,5 @@ alias restart='sudo systemctl restart'
 alias stat='sudo systemctl status'
 alias n='ping -c 3 gnu.org'
 alias cp='pycp -g'
+alias m='cd /micron'
+alias t='tmux'
